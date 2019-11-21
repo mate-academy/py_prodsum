@@ -24,3 +24,20 @@ def prod_sum(lst: List[int]) -> int:
         else:
             sum_odd_nums += num
     return product_even_nums - sum_odd_nums
+
+
+def product(lst: List[int]) -> int:
+    product = 1
+    for el in lst:
+        product *= el
+    return product
+
+
+def prod_sum_den_solution(lst: List[int]) -> int:
+    if not lst:
+        return 0
+    # product_even_nums - sum_odd_nums
+    return product(lst[::2]) - sum(lst[1::2])
+
+
+print(prod_sum_den_solution([1, 2, 3, 4]))
