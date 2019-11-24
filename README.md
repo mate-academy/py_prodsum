@@ -1,6 +1,7 @@
 # py_prodsum 
 
-Find the difference between the product of the even and the sum of the odd list items
+Find the difference between the product of items with even index and the sum
+ of items with odd index
 
 To deploy project on your local machine create new virtual environment and execute this command:
 
